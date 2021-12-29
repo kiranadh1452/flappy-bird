@@ -6,6 +6,12 @@ function gamePlay() {
 
     document.addEventListener('keydown', handleKey);
 
+    document.addEventListener('click', (e) => {
+      birdVelocity = 0;
+      time = 0;
+      birdVelocity = -4;
+    });
+
     moveBird();
     movePipe(birdElement);
 
