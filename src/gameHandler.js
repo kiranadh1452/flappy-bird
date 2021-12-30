@@ -1,4 +1,4 @@
-//game begun 
+//function to handle the gameplay
 function gamePlay() {
   let birdElement = _('.bird');
 
@@ -6,15 +6,8 @@ function gamePlay() {
 
     document.addEventListener('keydown', handleKey);
 
-    document.addEventListener('click', (e) => {
-      birdVelocity = 0;
-      time = 0;
-      birdVelocity = -4;
-    });
-
     moveBird();
     movePipe(birdElement);
-
     time += 0.001;
 
     if(score>highScoreFlappy){
@@ -26,7 +19,8 @@ function gamePlay() {
   }
 
 }
-//when game has ended
+
+//function to handle the bird death
 function gameOver() {
   time = 0;
   birdDeath();
@@ -38,6 +32,7 @@ function gameOver() {
   startBtn.innerHTML = `<p>Your Score : ${score} </p><p>Restart</p> <img src="assets/images/startButton.png" alt="play">
   <p>High Score : ${highScoreFlappy} </p> <p> Use Space Bar To JUMP</p>`;
 }
+
 //handling the key interaction
 function handleKey(e) {
   let code = e.code;
