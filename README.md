@@ -2,6 +2,8 @@
 
 Flappy Bird Game using HTML, CSS and Vanilla JS.
 
-css files : inside the 'css' folder <br>
-js files  : inside the 'src' folder <br>
-images and audio : inside the 'assets' folder
+CSS files : inside the 'css' folder <br>
+JS files  : inside the 'src' folder <br>
+Images and Audio : inside the 'assets' folder
+
+> Control <br> Use space to jump or click on the screen to jump
